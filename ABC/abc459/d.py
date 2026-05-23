@@ -6,7 +6,7 @@ for _ in range(T):
         chars[ord(s)-ord('a')] += 1
     csum = sum(chars)
     cmax = max(chars)
-    print(csum,cmax)
+    # print(csum,cmax)
     if cmax < csum - cmax + 2:
         print("Yes")
         ans = ""
@@ -22,4 +22,4 @@ for _ in range(T):
         print(ans)
     else:
         print("No")
-    print(chars)
+    # print(chars)
