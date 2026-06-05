@@ -28,4 +28,11 @@ while q:
             dist[ny][nx] = dist[y][x] + 1
             q.append((ny,nx))
 for i in range(H):
+    # ans = ""
+    # for e in dist[i]:
+    #     if e % 2 == 0:
+    #         ans += '.'
+    #     else:
+    #         ans += '#'
+    # print(ans)
     print(''.join('.' if s % 2 == 0 else '#' for s in dist[i]))
